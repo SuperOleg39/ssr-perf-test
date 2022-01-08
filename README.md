@@ -43,7 +43,6 @@ Long task сервер отдает быстро ответы на первые 
 
 ```bash
 autocannon -c 50 -d 10 http://localhost:3000/ -l -t 1000 --amount 200
-```
 
 Running 200 requests test @ http://localhost:3000/
 50 connections
@@ -98,6 +97,7 @@ Req/Bytes counts sampled once per second.
 └────────────┴──────────────┘
 
 200 requests in 20.04s, 24.4 kB read
+```
 
 #### Small tasks
 
@@ -110,7 +110,6 @@ Small tasks сервер выполняет все полученные одно
 
 ```bash
 autocannon -c 50 -d 10 http://localhost:4000/ -l -t 1000 --amount 200
-```
 
 Running 200 requests test @ http://localhost:4000/
 50 connections
@@ -165,6 +164,7 @@ Req/Bytes counts sampled once per second.
 └────────────┴──────────────┘
 
 200 requests in 20.04s, 24.4 kB read
+```
 
 ### Второе исследование
 
@@ -181,7 +181,6 @@ API отвечает медленно на каждый второй запро�
 
 ```bash
 autocannon -c 50 -d 10 http://localhost:3000/ -l -t 1000 --amount 200
-```
 
 Running 200 requests test @ http://localhost:3000/
 50 connections
@@ -236,6 +235,7 @@ Req/Bytes counts sampled once per second.
 └────────────┴──────────────┘
 
 200 requests in 23.04s, 24.4 kB read
+```
 
 #### Small tasks
 
@@ -249,7 +249,6 @@ Req/Bytes counts sampled once per second.
 
 ```bash
 autocannon -c 50 -d 10 http://localhost:4000/ -l -t 1000 --amount 200
-```
 
 Running 200 requests test @ http://localhost:4000/
 50 connections
@@ -304,6 +303,7 @@ Req/Bytes counts sampled once per second.
 └────────────┴──────────────┘
 
 200 requests in 21.04s, 24.4 kB read
+```
 
 ## Итоги
 
